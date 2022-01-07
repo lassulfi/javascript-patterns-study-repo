@@ -1,7 +1,7 @@
 function Chatroom() {
     let participants = {};
 
-    function registerPariticant(participant) {
+    function registerParticipant(participant) {
         participants[participant.name] = participant;
         participant.chatroom = this;
     }
@@ -19,7 +19,7 @@ function Chatroom() {
     }
 
     return {
-        register: registerPariticant,
+        register: registerParticipant,
         send:sendMessage
     }
 }
