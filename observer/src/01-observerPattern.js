@@ -19,7 +19,7 @@ function ShoppingCart() {
     this.getTotalPrice = function() {
         return this.items.reduce(function(previousValue, currentValue) {
             return previousValue.price + currentValue.price;
-        }, 0);
+        }, {price: 0});
     }
 }
 
